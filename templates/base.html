@@ -1,0 +1,79 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+
+     <title>Blog Template for Bootstrap</title>
+
+     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+ 
+     
+     <link rel="stylesheet" type="text/css" href="{% static 'article/blog.css' %}" />
+     
+
+  <body>
+
+   
+    <div class="blog-masthead">
+      <div class="container">
+         <nav class="blog-nav">
+          <a class="blog-nav-item active" href="#">Notice Blog</a>
+          <a class="blog-nav-item active" href="http://127.0.0.1:8000/">Home</a>
+          </nav> 
+       
+      </div>
+    </div>
+
+
+   <div class="container">
+    <div class="span 10">                
+      <div class="blog-header">
+        <div class="contentcol">
+         <a rel="Admin" href="#"><img src="{% static "article/logo.png" %}" width="300" height="100" alt="My image"/>
+           </div>
+         <h2 class="blog-title"></h2>
+        <p class="lead blog-description"></p>
+      </div>
+   </div>
+  
+     <div class="row">
+         {% block content %}
+
+         {% endblock %}
+     </div>
+ 
+</div>
+    <div class="blog-footer">
+      <p>Blog  for NoticeBoard</a> by <a href="http://www.logicake.com/">Logicake</a>.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+      <p>
+          <a href="http://127.0.0.1:8000/articles/older/">Older</a>
+    </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

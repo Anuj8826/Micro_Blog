@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+ 
+ 
+ <div class="row">
+       
+    {% for article in articles %}
+       
+      
+         <div class="col-sm-8 blog-main">
+            
+            <p class="blog-post-">{{ article.pub_date}}by Admin</a></p>
+            <h3 class="text-success"><a href="/articles/get/{{ article.id}}/">{{ article.title }}</a></h3>
+            <p class="text-black">{{ article.body }}</p>
+            <hr>
+            
+         
+       </div>
+   {% endfor %}
+ 
+</div>
+{% endblock %}
+

@@ -1,0 +1,9 @@
+<html>
+<body>
+
+hi {{name}},
+this class based view Template seems to have worked!
+
+</body>
+</html>
+
